@@ -1,6 +1,6 @@
 # Computer_Vision
 
-## How to install Pytorch environment
+## Start to install Pytorch environment
 ### 1. Download and install linux environment (Ubuntu) or connect to other servers  
 ### 2. Download Miniconda3  
 Go to https://docs.conda.io/en/latest/miniconda.html and download suitable version, below is the suitable version for the writer.
@@ -54,7 +54,7 @@ Check your nvcc version
 ```
 nvcc --version (Not required)
 ```
-Installing pytorch with cuda10.1 to myenv
+Install pytorch with cuda10.1 to myenv
 ```
 pip install torch==1.8.1+cu101 torchvision==0.9.1+cu101 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 ```
