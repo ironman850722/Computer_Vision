@@ -1,5 +1,11 @@
 # Computer_Vision
 
+## Introduction
+The first part of the project is called keypoints detection and CNN designing. In this part, I used 10 pictures as my sample pictures, and using two different keypoints detection methods "SIFT" and "Harris". I used these two methods and found 200 keypoints in each sample pictures and generated SIFT_patches.pth and Harris_patches.pth files. After that, I modified the sample CNN by adding some convolution layers and generated CNN2 and CNN3. The "CNN_Training_Result.pdf" presents the training result by setting different kinds of learning rate and batch sizes.
+
+The second part of the project is images matching. There are two files in images_retrieval file, "query" and "images". "query" includes 34 pictures and each of the pictures is different, while "images" includes 4 * 34 = 136 pictures. Every four pictures in images file is corresponding to a picture in query file. The core idea is to fetch the top 20 keypoints in each picture in both images and query files; compute the cost matrix, and finally determine the best 4 fitting pictures from images file.  
+
+
 ## Start to install Pytorch environment
 ### 1. Download and install linux environment (Ubuntu) or connect to other servers  
 ### 2. Download Miniconda3  
@@ -66,3 +72,15 @@ conda install -n myenv -c conda-forge matplotlib
 conda install -n myenv -c conda-forge tqdm
 pip install tensorboard_logger
 ```
+### 7. Run the code
+Drag all the files from Codes into your jupyter notebook. Run keypoint_detection.ipynb and keypoint_CNN_training.ipynb orderly to accomplish the first part, and run images_matching1.ipynb and images_matching2.ipynb to accomplish the second part of the project.  
+## Result
+![image](https://github.com/ironman850722/Computer_Vision/blob/main/Matching_Precision.jpg)  
+In the figure, when finding the most matching picture among 136 pictures in images file, the average correctness rate is 58.8%; when finding the four most matching pictures among 136 pictures in image file, the average correctness rate is 40.4%. However, if we randomly pick 1 or 4 pictures in images file, the average correctness rate is only 2.9%.
+
+
+
+
+
+
+
