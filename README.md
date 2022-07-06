@@ -1,4 +1,4 @@
-# Computer_Vision
+# Computer Vision
 
 ## Introduction
 The first part of the project is called keypoints detection and CNN designing. In this part, I used 10 pictures as my sample pictures, and using two different keypoints detection methods "SIFT" and "Harris". I used these two methods and found 200 keypoints in each sample pictures and generated SIFT_patches.pth and Harris_patches.pth files. After that, I modified the sample CNN by adding some convolution layers and generated CNN2 and CNN3. The "CNN_Training_Result.pdf" presents the training result by setting different kinds of learning rate and batch sizes.
