@@ -41,6 +41,7 @@ http://localhost:8888
 ```
 
 ### 6. Install some required packages
+Export the below files
 ```
 export PATH=/usr/local/common/gcc-7.3.0/bin:$PATH
 export PATH=/usr/local/common/gcc-7.3.0/bin/g++:$PATH
