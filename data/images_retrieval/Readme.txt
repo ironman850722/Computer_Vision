@@ -1,0 +1,2 @@
+Query file includes 34 pictures, each of them is different object.
+Based on Query file, Images file has 34 * 4 = 136 pictures. In Images file, every 4 pictures in Images file is corresponding to a picture in Query file, but only in different angle. For example, picture 1 in Query file should match to picture 1 to picture 4 in Images file.
